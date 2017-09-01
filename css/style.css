@@ -23,6 +23,10 @@ html, body, .wrap {
   height: 100%;
   overflow: hidden; }
 
+.wrap {
+  display: flex;
+  flex-direction: column; }
+
 .header {
   box-sizing: border-box;
   width: 100%;
@@ -41,6 +45,62 @@ html, body, .wrap {
       color: #9d9d9d; }
     .header ul li.bg {
       color: #2b53f3;
-      border-bottom: 1px solid #2b53f3; }
+      border-bottom: 2px solid #2b53f3;
+      z-index: 9; }
+
+.main {
+  flex: 1;
+  overflow: hidden; }
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background: #f3f3fe;
+  border-top: 1px solid #e6e6fd;
+  border-bottom: 1px solid #e6e6fd; }
+
+.content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 0.46rem; }
+  .content .cont {
+    width: 100%;
+    margin-top: 0.22rem;
+    box-shadow: 0 0 3px #c8c8c8;
+    border-radius: 0.1rem; }
+    .content .cont h2 {
+      width: 100%;
+      background: #fd6060;
+      font-size: 0.89rem;
+      color: #fff;
+      border-top-left-radius: 0.1rem;
+      border-top-right-radius: 0.1rem;
+      border-bottom: 3px dashed #fff;
+      position: relative; }
+      .content .cont h2 b {
+        font-size: 0.44rem; }
+      .content .cont h2 span {
+        position: absolute;
+        right: 0.26rem;
+        bottom: 0.22rem;
+        font-size: 0.49rem; }
+    .content .cont .one {
+      background: #5686f4; }
+    .content .cont .two {
+      background: #965df5; }
+    .content .cont .three {
+      background: #4bc670; }
+    .content .cont p {
+      padding-left: 0.25rem;
+      line-height: 1.8;
+      font-size: 0.2rem; }
+    .content .cont .first i {
+      font-size: 0.21rem;
+      color: #04a055;
+      padding-right: 0.12rem; }
+    .content .cont .second i {
+      font-size: 0.26rem;
+      color: #8a8a8a;
+      padding-right: 0.12rem; }
 
 /*# sourceMappingURL=style.css.map */
